@@ -14,7 +14,7 @@ int main() {
     std::cout << "Error creating face.";
   }
   
-  if (!(face->face_flags & FT_FACE_FLAG_SCALABLE) == FT_FACE_FLAG_SCALABLE) {
+  if ((face->face_flags & FT_FACE_FLAG_SCALABLE) != FT_FACE_FLAG_SCALABLE) {
     std::cout << "Error: font is not scalable.";
   }
 
