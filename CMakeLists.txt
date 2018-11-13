@@ -10,5 +10,4 @@ target_link_libraries(freetypeTest PUBLIC freetype)
 #set_property(TARGET freetypeTest PROPERTY CXX_STANDARD 17)
 #set_property(TARGET freetypeTest PROPERTY CXX_STANDARD_REQUIRED ON)
 
-set_property(TARGET freetypeTest PROPERTY CXX_STANDARD 17)
-set_property(TARGET freetypeTest PROPERTY CXX_STANDARD_REQUIRED ON)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Anke.ttf ${CMAKE_CURRENT_BINARY_DIR}/Anke.ttf COPYONLY)
