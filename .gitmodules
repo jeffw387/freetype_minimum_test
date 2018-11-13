@@ -1,3 +1,6 @@
 [submodule "freetype"]
 	path = freetype
 	url = https://github.com/jeffw387/freetype.git
+[submodule "external/freetype"]
+	path = external/freetype
+	url = https://github.com/jeffw387/freetype.git
