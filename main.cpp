@@ -10,7 +10,8 @@ int main() {
   }
 
   FT_Face face{};
-  if (FT_New_Face(library, "Anke.ttf", 0, &face)) {
+  auto faceResult = FT_New_Face(library, "Anke.ttf", 0, &face);
+  if (faceResult) {
     std::cout << "Error creating face.";
   }
   
