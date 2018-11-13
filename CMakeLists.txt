@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 set(BUILD_SHARED_LIBS OFF CACHE BOOL "Build everything as static.")
+project(FreetypeTest CXX)
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
 
 add_executable(freetypeTest main.cpp)
