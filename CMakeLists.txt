@@ -5,6 +5,8 @@ project(FreetypeTest CXX)
 
 add_executable(freetypeTest main.cpp)
 add_subdirectory(external/freetype)
+target_link_libraries(freetypeTest PUBLIC freetype)
+
 #set_property(TARGET freetypeTest PROPERTY CXX_STANDARD 17)
 #set_property(TARGET freetypeTest PROPERTY CXX_STANDARD_REQUIRED ON)
 
